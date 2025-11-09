@@ -10,6 +10,7 @@ package net.nyauru.touhoupixelcanteen;
 import net.nyauru.touhoupixelcanteen.register.ModBlocks;
 import net.nyauru.touhoupixelcanteen.register.ModItems;
 import net.nyauru.touhoupixelcanteen.register.ModTabs;
+import net.nyauru.touhoupixelcanteen.register.ModTooltips;
 
 public final class Touhoupixelcanteen {
     public static final String MOD_ID = "touhoupixelcanteen";
@@ -21,5 +22,7 @@ public final class Touhoupixelcanteen {
         ModItems.ITEMS.register();
         //导入创造物品栏
         ModTabs.TABS.register();
+        //初始化tooltip
+        ModTooltips.init();
     }
 }
