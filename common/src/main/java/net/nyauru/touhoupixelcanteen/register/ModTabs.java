@@ -43,8 +43,8 @@ public class ModTabs {
                     .displayItems((parameters, output) -> {
                         //在这填充物品
                         output.accept(Items.RAW_LAMPREY.get());
+                        output.accept(Items.ROASTED_LAMPREY.get());
                     })
                     .build()
     );
 }
-

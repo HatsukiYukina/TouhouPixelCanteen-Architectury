@@ -60,6 +60,18 @@ public class Items {
                             .build()
                     )
             ));
+
+    public static final RegistrySupplier<Item>ROASTED_LAMPREY=
+            ITEMS.register("roasted_lamprey",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0), 1)
+                            .build()
+                    )
+                    .stacksTo(64)
+            ));
+
     public static Item.Properties basicItem() {
         return new Item.Properties();
     }
