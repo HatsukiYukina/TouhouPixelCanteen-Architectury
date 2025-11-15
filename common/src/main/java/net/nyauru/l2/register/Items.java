@@ -50,7 +50,7 @@ public class Items {
 			ItemTags.FISHES, YHTagGen.RAW_EEL, DietTagGen.PROTEINS.tag
 	),
      */
-
+    //生八目鳗
     public static final RegistrySupplier<Item> RAW_LAMPREY =
             ITEMS.register("raw_lamprey", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
