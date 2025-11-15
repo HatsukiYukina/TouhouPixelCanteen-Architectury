@@ -114,6 +114,118 @@ public class Items {
                     )
             ));
 
+    public static final RegistrySupplier<Item> GRILLED_VENISON_SLICE =
+            ITEMS.register("grilled_venison_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8F)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> COOKED_MANDRAKE_ROOT =
+            ITEMS.register("cooked_mandrake_root",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> ROE =
+            ITEMS.register("roe",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.6F)
+                            .effect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 400, 0), 0.3f)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> BUTTER =
+            ITEMS.register("butter",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.3F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TOFU =
+            ITEMS.register("tofu",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.5F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> OILY_BEAN_CURD =
+            ITEMS.register("oily_bean_curd",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.8F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> IMITATION_CRAB =
+            ITEMS.register("imitation_crab",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(1F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TAMAGOYAKI =
+            ITEMS.register("tamagoyaki",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TAMAGOYAKI_SLICE =
+            ITEMS.register("tamagoyaki_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> NATTOU =
+            ITEMS.register("nattou",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> CUCUMBER_SLICE =
+            ITEMS.register("cucumber_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.3F)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> RAISIN =
+            ITEMS.register("raisin",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.6F)
+                            .fast()
+                            .build()
+                    )
+            ));
+
     public static Item.Properties basicItem() {
         return new Item.Properties();
     }

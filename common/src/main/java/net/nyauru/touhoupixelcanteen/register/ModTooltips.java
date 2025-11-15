@@ -55,6 +55,53 @@ public class ModTooltips {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.seared_tuna")
                     .withStyle(ChatFormatting.WHITE));
         }
+        if (stack.getItem() == net.nyauru.l2.register.Items.GRILLED_VENISON_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.grilled_venison_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.COOKED_MANDRAKE_ROOT.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.cooked_mandrake_root")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.ROE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.roe")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.BUTTER.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.butter")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.TOFU.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.tofu")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.OILY_BEAN_CURD.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.oily_bean_curd")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.IMITATION_CRAB.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.imitation_crab")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.TAMAGOYAKI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.tamagoyaki")
+                    .withStyle(ChatFormatting.WHITE));
+        }if (stack.getItem() == net.nyauru.l2.register.Items.TAMAGOYAKI_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.tamagoyaki_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.NATTOU.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.nattou")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.CUCUMBER_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.cucumber_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.RAISIN.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.raisin")
+                    .withStyle(ChatFormatting.WHITE));
+        }
 
 
         //原版物品

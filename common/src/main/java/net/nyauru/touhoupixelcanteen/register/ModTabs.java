@@ -48,6 +48,19 @@ public class ModTabs {
                         output.accept(Items.RAW_TUNA.get());
                         output.accept(Items.ROASTED_LAMPREY_FILLET.get());
                         output.accept(Items.SEARED_TUNA.get());
+                        output.accept(Items.GRILLED_VENISON_SLICE.get());
+                        output.accept(Items.COOKED_MANDRAKE_ROOT.get());
+                        output.accept(Items.ROE.get());
+                        output.accept(Items.BUTTER.get());
+                        output.accept(Items.TOFU.get());
+                        output.accept(Items.OILY_BEAN_CURD.get());
+                        output.accept(Items.IMITATION_CRAB.get());
+                        output.accept(Items.TAMAGOYAKI.get());
+                        output.accept(Items.TAMAGOYAKI_SLICE.get());
+                        output.accept(Items.NATTOU.get());
+                        output.accept(Items.CUCUMBER_SLICE.get());
+                        output.accept(Items.RAISIN.get());
+
                     })
                     .build()
     );
