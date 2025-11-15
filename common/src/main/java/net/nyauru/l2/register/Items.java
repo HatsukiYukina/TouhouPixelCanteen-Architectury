@@ -60,60 +60,104 @@ public class Items {
                             .build()
                     )
             ));
-
-    public static final RegistrySupplier<Item> ROASTED_LAMPREY =
-            ITEMS.register("roasted_lamprey",() -> new Item(new Item.Properties()
+    //生金枪鱼片
+    public static final RegistrySupplier<Item> RAW_TUNA_SLICE =
+            ITEMS.register("raw_tuna_slice", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
-                            .nutrition(10)
-                            .saturationModifier(0.8F)
-                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0), 1)
-                            .build()
-                    )
-                    .stacksTo(64)//设置堆叠数量
-            ));
-
-    public static final RegistrySupplier<Item> RAW_LAMPREY_FILLET =
-            ITEMS.register("raw_lamprey_fillet", () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .nutrition(1)
-                            .saturationModifier(0.3F)
-                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1800, 0), 0.5f)
-                            .fast()
+                            .nutrition(4)
+                            .saturationModifier(0.3f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 0), 0.3f)
                             .build()
                     )
             ));
-
-    public static final RegistrySupplier<Item> RAW_TUNA =
-            ITEMS.register("raw_tuna",() -> new Item(new Item.Properties()
+    //炙烤金枪鱼片
+    public static final RegistrySupplier<Item> SEARED_TUNA_SLICE =
+            ITEMS.register("seared_tuna_slice", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(5)
+                            .saturationModifier(0.8f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 0), 0.4f)
+                            .build()
+                    )
+            ));
+    //金枪鱼大腹
+    public static final RegistrySupplier<Item> OTORO =
+            ITEMS.register("otoro", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(9)
-                            .saturationModifier(0.3F)
-                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.3f)
+                            .saturationModifier(0.3f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.5f)
                             .build()
                     )
             ));
-
-    public static final RegistrySupplier<Item> ROASTED_LAMPREY_FILLET =
-            ITEMS.register("roasted_lamprey_fillet", () -> new Item(new Item.Properties()
+    //螃蟹
+    public static final RegistrySupplier<Item> CRAB =
+            ITEMS.register("crab", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.2f)
+                            .build()
+                    )
+            ));
+    //蒸螃蟹
+    public static final RegistrySupplier<Item> STEAMED_CRAB =
+            ITEMS.register("steamed_crab", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(6)
-                            .saturationModifier(0.8F)
-                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1800, 0), 1)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.3f)
+                            .build()
+                    )
+            ));
+    //蟹粉
+    public static final RegistrySupplier<Item> CRAB_MEAT =
+            ITEMS.register("crab_meat", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.5f)
+                            .build()
+                    )
+            ));
+    //蟹籽
+    public static final RegistrySupplier<Item> CRAB_ROE =
+            ITEMS.register("crab_roe", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 1), 0.5f)
+                            .build()
+                    )
+            ));
+    //生鹿排
+    public static final RegistrySupplier<Item> RAW_VENISON =
+            ITEMS.register("raw_venison", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.3f)
+                            .build()
+                    )
+            ));
+    //烤鹿排
+    public static final RegistrySupplier<Item> GRILLED_VENISON =
+            ITEMS.register("grilled_venison", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.8f)
+                            .build()
+                    )
+            ));
+    //生鹿片
+    public static final RegistrySupplier<Item> RAW_VENISON_SLICE =
+            ITEMS.register("raw_venison_slice", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
                             .fast()
                             .build()
                     )
             ));
-
-    public static final RegistrySupplier<Item> SEARED_TUNA =
-            ITEMS.register("seared_tuna",() -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .nutrition(12)
-                            .saturationModifier(0.8F)
-                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.4f)
-                            .build()
-                    )
-            ));
-
     public static Item.Properties basicItem() {
         return new Item.Properties();
     }

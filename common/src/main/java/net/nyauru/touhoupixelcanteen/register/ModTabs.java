@@ -44,12 +44,18 @@ public class ModTabs {
                     .displayItems((parameters, output) -> {
                         //在这填充物品
                         output.accept(Items.RAW_LAMPREY.get());
-                        output.accept(Items.ROASTED_LAMPREY.get());
-                        output.accept(Items.RAW_LAMPREY_FILLET.get());
-                        output.accept(Items.RAW_TUNA.get());
-                        output.accept(Items.ROASTED_LAMPREY_FILLET.get());
-                        output.accept(Items.SEARED_TUNA.get());
+                        output.accept(Items.RAW_TUNA_SLICE.get());
+                        output.accept(Items.SEARED_TUNA_SLICE.get());
+                        output.accept(Items.OTORO.get());
+                        output.accept(Items.CRAB.get());
+                        output.accept(Items.STEAMED_CRAB.get());
+                        output.accept(Items.CRAB_MEAT.get());
+                        output.accept(Items.CRAB_ROE.get());
+                        output.accept(Items.RAW_VENISON.get());
+                        output.accept(Items.GRILLED_VENISON.get());
+                        output.accept(Items.RAW_VENISON_SLICE.get());
                     })
                     .build()
     );
 }
+
