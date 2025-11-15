@@ -35,6 +35,7 @@ public class ModTabs {
                     })
                     .build()
     );
+    //归家主栏
     public static final RegistrySupplier<CreativeModeTab> CREATIVE_TAB_YH = TABS.register(
             "yh_tab",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
