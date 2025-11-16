@@ -141,8 +141,66 @@ public class ModTooltips {
         if (stack.getItem() == net.nyauru.l2.register.Items.RAISIN.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.raisin")
                     .withStyle(ChatFormatting.WHITE));
+        }//分区标记4
+        if (stack.getItem() == net.nyauru.l2.register.Items.MOCHI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.mochi")
+                    .withStyle(ChatFormatting.WHITE));
         }
-
+        if (stack.getItem() == net.nyauru.l2.register.Items.TSUKIMI_DANGO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.tsukimi_dango")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.MATCHA_MOCHI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.matcha_mochi")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.SAKURA_MOCHI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.sakura_mochi")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.YASHOUMA_DANGO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.yashouma_dango")
+                    .withStyle(ChatFormatting.WHITE));
+        }if (stack.getItem() == net.nyauru.l2.register.Items.ONIGILI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.onigili")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.SENBEI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.senbei")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.SEKIBANKIYAKI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.sekibankiyaki")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.YAKUMO_INARI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.yakumo_inari")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.MANTOU.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.mantou")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.BUN.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.bun")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.OYAKI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.oyaki")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.PORK_RICE_BALL.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.pork_rice_ball")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.STEAMED_EGG_IN_BAMBOO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.steamed_egg_in_bamboo")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.KABAYAKI.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.kabayaki")
+                    .withStyle(ChatFormatting.WHITE));
+        }//分区标记5
 
         //原版物品
         if (stack.getItem() == Items.CARROT) {

@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.nyauru.touhoupixelcanteen.Touhoupixelcanteen;
+import vectorwing.farmersdelight.common.registry.ModEffects;
 
 import java.util.function.Supplier;
 
@@ -325,6 +326,152 @@ public class Items {
                             .build()
                     )
             ));
+    //分区4
+    //麻薯
+    public static final RegistrySupplier<Item> MOCHI =
+            ITEMS.register("mochi", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6f)
+                            .fast()
+                            .build()
+                    )
+            ));
+    //月见团子
+    public static final RegistrySupplier<Item> TSUKIMI_DANGO =
+            ITEMS.register("tsukimi_dango", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.6f)
+                            .fast()
+                            .build()
+                    )
+            ));
+    //抹茶麻薯
+    public static final RegistrySupplier<Item> MATCHA_MOCHI =
+            ITEMS.register("matcha_mochi", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6f)
+                            .fast()
+                            //.effect(new MobEffectInstance(YHEffects.TEA, 1200, 0), 1.0f)
+                            .build()
+                    )
+            ));
+    //樱饼
+    public static final RegistrySupplier<Item> SAKURA_MOCHI =
+            ITEMS.register("sakura_mochi", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6f)
+                            .fast()
+                            .build()
+                    )
+            ));
+    //信州瘦马
+    public static final RegistrySupplier<Item> YASHOUMA_DANGO =
+            ITEMS.register("yashouma_dango", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.6f)
+                            .fast()
+                            .build()
+                    )
+            ));
+    //饭团
+    public static final RegistrySupplier<Item> ONIGILI =
+            ITEMS.register("onigili", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //仙贝
+    public static final RegistrySupplier<Item> SENBEI =
+            ITEMS.register("senbei", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //生首烧
+    public static final RegistrySupplier<Item> SEKIBANKIYAKI =
+            ITEMS.register("sekibankiyaki", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //八云豆包饭
+    public static final RegistrySupplier<Item> YAKUMO_INARI =
+            ITEMS.register("yakumo_inari", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //馒头
+    public static final RegistrySupplier<Item> MANTOU =
+            ITEMS.register("mantou", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //包子
+    public static final RegistrySupplier<Item> BUN =
+            ITEMS.register("bun", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.8f)
+                            .build()
+                    )
+            ));
+    //御烧
+    public static final RegistrySupplier<Item> OYAKI =
+            ITEMS.register("oyaki", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //猪肉饭团
+    public static final RegistrySupplier<Item> PORK_RICE_BALL =
+            ITEMS.register("pork_rice_ball", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //竹筒蒸蛋
+    public static final RegistrySupplier<Item> STEAMED_EGG_IN_BAMBOO =
+            ITEMS.register("steamed_egg_in_bamboo", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.6f)
+                            .build()
+                    )
+            ));
+    //蒲烧鳗鱼
+    public static final RegistrySupplier<Item> KABAYAKI =
+            ITEMS.register("kabayaki", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(0.8f)
+                            .fast()
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0), 1.0f)
+                            .effect(new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.NOURISHMENT, 2400, 0), 1.0f)
+                            .build()
+                    )
+            ));
+    //分区标记5
 
     public static Item.Properties basicItem() {
         return new Item.Properties();

@@ -73,6 +73,23 @@ public class ModTabs {
                         output.accept(Items.NATTOU.get());
                         output.accept(Items.CUCUMBER_SLICE.get());
                         output.accept(Items.RAISIN.get());
+                        //分区标记4
+                        output.accept(Items.MOCHI.get());
+                        output.accept(Items.TSUKIMI_DANGO.get());
+                        output.accept(Items.MATCHA_MOCHI.get());
+                        output.accept(Items.SAKURA_MOCHI.get());
+                        output.accept(Items.YASHOUMA_DANGO.get());
+                        output.accept(Items.ONIGILI.get());
+                        output.accept(Items.SENBEI.get());
+                        output.accept(Items.SEKIBANKIYAKI.get());
+                        output.accept(Items.YAKUMO_INARI.get());
+                        output.accept(Items.MANTOU.get());
+                        output.accept(Items.BUN.get());
+                        output.accept(Items.OYAKI.get());
+                        output.accept(Items.PORK_RICE_BALL.get());
+                        output.accept(Items.STEAMED_EGG_IN_BAMBOO.get());
+                        output.accept(Items.KABAYAKI.get());
+                        //分区标记5
                     })
                     .build()
     );
