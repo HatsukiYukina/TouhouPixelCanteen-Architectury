@@ -28,6 +28,13 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.touhoupixelcanteen]]
+modId = "farmersdelight"
+type = "required"
+versionRange = "[1.2.8,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.touhoupixelcanteen]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.8,)"
