@@ -49,6 +49,18 @@ public class ModTabs {
                         output.accept(Items.RAW_TUNA.get());
                         output.accept(Items.ROASTED_LAMPREY_FILLET.get());
                         output.accept(Items.SEARED_TUNA.get());
+                        //分区标记2
+                        output.accept(Items.RAW_TUNA_SLICE.get());
+                        output.accept(Items.SEARED_TUNA_SLICE.get());
+                        output.accept(Items.OTORO.get());
+                        output.accept(Items.CRAB.get());
+                        output.accept(Items.STEAMED_CRAB.get());
+                        output.accept(Items.CRAB_MEAT.get());
+                        output.accept(Items.CRAB_ROE.get());
+                        output.accept(Items.RAW_VENISON.get());
+                        output.accept(Items.GRILLED_VENISON.get());
+                        output.accept(Items.RAW_VENISON_SLICE.get());
+                        //分区标记3
                         output.accept(Items.GRILLED_VENISON_SLICE.get());
                         output.accept(Items.COOKED_MANDRAKE_ROOT.get());
                         output.accept(Items.ROE.get());
@@ -61,7 +73,6 @@ public class ModTabs {
                         output.accept(Items.NATTOU.get());
                         output.accept(Items.CUCUMBER_SLICE.get());
                         output.accept(Items.RAISIN.get());
-
                     })
                     .build()
     );

@@ -34,7 +34,7 @@ public class ModTooltips {
         if (stack.getItem() == net.nyauru.l2.register.Items.RAW_LAMPREY.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.raw_lamprey")
                     .withStyle(ChatFormatting.WHITE));
-        }
+        }//分区标记1
         if (stack.getItem() == net.nyauru.l2.register.Items.ROASTED_LAMPREY.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.roasted_lamprey")
                     .withStyle(ChatFormatting.WHITE));
@@ -54,7 +54,47 @@ public class ModTooltips {
         if (stack.getItem() == net.nyauru.l2.register.Items.SEARED_TUNA.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.seared_tuna")
                     .withStyle(ChatFormatting.WHITE));
+        }//分区标记2
+        if (stack.getItem() == net.nyauru.l2.register.Items.RAW_TUNA_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.raw_tuna_slice")
+                    .withStyle(ChatFormatting.WHITE));
         }
+        if (stack.getItem() == net.nyauru.l2.register.Items.SEARED_TUNA_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.seared_tuna_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.OTORO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.otoro")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.CRAB.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.crab")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.STEAMED_CRAB.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.steamed_crab")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.CRAB_MEAT.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.crab_meat")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.CRAB_ROE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.crab_roe")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.RAW_VENISON.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.raw_venison")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.GRILLED_VENISON.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.grilled_venison")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.RAW_VENISON_SLICE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.raw_venison_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }//分区标记3
         if (stack.getItem() == net.nyauru.l2.register.Items.GRILLED_VENISON_SLICE.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.grilled_venison_slice")
                     .withStyle(ChatFormatting.WHITE));
