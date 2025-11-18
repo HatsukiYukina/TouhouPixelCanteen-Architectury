@@ -200,7 +200,35 @@ public class ModTooltips {
         if (stack.getItem() == net.nyauru.l2.register.Items.KABAYAKI.get()) {
             components.add(Component.translatable("tooltip.touhoupixelcanteen.kabayaki")
                     .withStyle(ChatFormatting.WHITE));
-        }//分区标记5
+        }//分区标记5，stick
+        if (stack.getItem() == net.nyauru.l2.register.Items.CANDY_APPLE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.candy_apple")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.MILK_POPSICLE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.milk_popsicle")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.BIG_POPSICLE.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.big_popsicle")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.KINAKO_DANGO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.kinako_dango")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.MITARASHI_DANGO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.mitarashi_dango")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.ASSORTED_DANGO.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.assorted_dango")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.LAMPREY_SKEWER.get()) {
+            components.add(Component.translatable("tooltip.touhoupixelcanteen.lamprey_skewer")
+                    .withStyle(ChatFormatting.WHITE));
+        }
 
         //原版物品
         if (stack.getItem() == Items.CARROT) {

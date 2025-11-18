@@ -471,7 +471,76 @@ public class Items {
                             .build()
                     )
             ));
-    //分区标记5
+    //分区标记5,sitck
+    //苹果糖
+    public static final RegistrySupplier<Item> CANDY_APPLE =
+            ITEMS.register("candy_apple", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.5f)
+                            .build()
+                    )
+            ));
+    //牛奶冰棍
+    public static final RegistrySupplier<Item> MILK_POPSICLE =
+            ITEMS.register("milk_popsicle", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.5f)
+                            .build()
+                    )
+            ));
+    //大冰棍儿
+    public static final RegistrySupplier<Item> BIG_POPSICLE =
+            ITEMS.register("big_popsicle", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.1f)
+                            .build()
+                    )
+            ));
+    //黄豆粉团子🍡
+    public static final RegistrySupplier<Item> KINAKO_DANGO =
+            ITEMS.register("kinako_dango", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationModifier(0.6f)
+                            //.effect(new MobEffectInstance(ModEffects.NOURISHMENT, 1200, 0), 1.0f)
+                            .build()
+                    )
+            ));
+    //御手洗团子
+    public static final RegistrySupplier<Item> MITARASHI_DANGO =
+            ITEMS.register("mitarashi_dango", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationModifier(0.6f)
+                            .effect(new MobEffectInstance(ModEffects.NOURISHMENT, 2400, 0), 1.0f)
+                            .build()
+                    )
+            ));
+    //三彩团子🍡
+    public static final RegistrySupplier<Item> ASSORTED_DANGO =
+            ITEMS.register("assorted_dango", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationModifier(0.6f)
+                            .effect(new MobEffectInstance(ModEffects.NOURISHMENT, 2400, 0), 1.0f)
+                            .build()
+                    )
+            ));
+    //蒲烧鳗鱼烤串
+    public static final RegistrySupplier<Item> LAMPREY_SKEWER =
+            ITEMS.register("lamprey_skewer", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(14)
+                            .saturationModifier(0.8f)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 4800, 0), 1.0f)
+                            .effect(new MobEffectInstance(ModEffects.NOURISHMENT, 4800, 0), 1.0f)
+                            .effect(new MobEffectInstance(ModEffects.COMFORT, 4800, 0), 1.0f)
+                            .build()
+                    )
+            ));
 
     public static Item.Properties basicItem() {
         return new Item.Properties();

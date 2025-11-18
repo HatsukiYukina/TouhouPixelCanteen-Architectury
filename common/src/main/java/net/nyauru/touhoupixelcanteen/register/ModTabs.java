@@ -89,7 +89,14 @@ public class ModTabs {
                         output.accept(Items.PORK_RICE_BALL.get());
                         output.accept(Items.STEAMED_EGG_IN_BAMBOO.get());
                         output.accept(Items.KABAYAKI.get());
-                        //分区标记5
+                        //分区标记5，stick
+                        output.accept(Items.CANDY_APPLE.get());
+                        output.accept(Items.MILK_POPSICLE.get());
+                        output.accept(Items.BIG_POPSICLE.get());
+                        output.accept(Items.KINAKO_DANGO.get());
+                        output.accept(Items.MITARASHI_DANGO.get());
+                        output.accept(Items.ASSORTED_DANGO.get());
+                        output.accept(Items.LAMPREY_SKEWER.get());
                     })
                     .build()
     );
