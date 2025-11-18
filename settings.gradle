@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'touhoupixelcanteen'
+rootProject.name = 'gensokyoizakaya'
 
 include 'common'
 include 'fabric'

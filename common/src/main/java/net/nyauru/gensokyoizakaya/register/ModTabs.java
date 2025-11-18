@@ -1,0 +1,117 @@
+/*
+MIT License
+Copyright (c) 2025 aurora4123,Yukina,
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+package net.nyauru.gensokyoizakaya.register;
+
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.nyauru.l2.register.Items;
+import net.nyauru.gensokyoizakaya.GensokyoIzakaya;
+
+public class ModTabs {
+    public static final DeferredRegister<CreativeModeTab> TABS =
+            DeferredRegister.create(GensokyoIzakaya.MOD_ID, Registries.CREATIVE_MODE_TAB);
+
+    //创造模式 主物品栏
+    public static final RegistrySupplier<CreativeModeTab> CREATIVE_TAB_MAIN = TABS.register(
+            "main_tab",
+            () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                    .title(Component.translatable("tab.gensokyoizakay.main"))
+                    .icon(() -> new ItemStack(ModItems.CHILI_PEPPER.get()))
+                    .displayItems((parameters, output) -> {
+                        //在这填充物品
+                        output.accept(ModItems.CHILI_PEPPER.get()); //辣椒
+                        output.accept(ModItems.CHILI_PEPPER_SEED.get()); //辣椒种子
+                    })
+                    .build()
+    );
+    //归家主栏
+    public static final RegistrySupplier<CreativeModeTab> CREATIVE_TAB_YH = TABS.register(
+            "yh_tab",
+            () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+                    .title(Component.translatable("tab.gensokyoizakaya.youkaishomecoming"))
+                    .icon(() -> new ItemStack(Items.RAW_LAMPREY.get()))
+                    .displayItems((parameters, output) -> {
+                        //在这填充物品
+                        output.accept(Items.RAW_LAMPREY.get());
+                        output.accept(Items.ROASTED_LAMPREY.get());
+                        output.accept(Items.RAW_LAMPREY_FILLET.get());
+                        output.accept(Items.RAW_TUNA.get());
+                        output.accept(Items.ROASTED_LAMPREY_FILLET.get());
+                        output.accept(Items.SEARED_TUNA.get());
+                        //分区标记2
+                        output.accept(Items.RAW_TUNA_SLICE.get());
+                        output.accept(Items.SEARED_TUNA_SLICE.get());
+                        output.accept(Items.OTORO.get());
+                        output.accept(Items.CRAB.get());
+                        output.accept(Items.STEAMED_CRAB.get());
+                        output.accept(Items.CRAB_MEAT.get());
+                        output.accept(Items.CRAB_ROE.get());
+                        output.accept(Items.RAW_VENISON.get());
+                        output.accept(Items.GRILLED_VENISON.get());
+                        output.accept(Items.RAW_VENISON_SLICE.get());
+                        //分区标记3
+                        output.accept(Items.GRILLED_VENISON_SLICE.get());
+                        output.accept(Items.COOKED_MANDRAKE_ROOT.get());
+                        output.accept(Items.ROE.get());
+                        output.accept(Items.BUTTER.get());
+                        output.accept(Items.TOFU.get());
+                        output.accept(Items.OILY_BEAN_CURD.get());
+                        output.accept(Items.IMITATION_CRAB.get());
+                        output.accept(Items.TAMAGOYAKI.get());
+                        output.accept(Items.TAMAGOYAKI_SLICE.get());
+                        output.accept(Items.NATTOU.get());
+                        output.accept(Items.CUCUMBER_SLICE.get());
+                        output.accept(Items.RAISIN.get());
+                        //分区标记4
+                        output.accept(Items.MOCHI.get());
+                        output.accept(Items.TSUKIMI_DANGO.get());
+                        output.accept(Items.MATCHA_MOCHI.get());
+                        output.accept(Items.SAKURA_MOCHI.get());
+                        output.accept(Items.YASHOUMA_DANGO.get());
+                        output.accept(Items.ONIGILI.get());
+                        output.accept(Items.SENBEI.get());
+                        output.accept(Items.SEKIBANKIYAKI.get());
+                        output.accept(Items.YAKUMO_INARI.get());
+                        output.accept(Items.MANTOU.get());
+                        output.accept(Items.BUN.get());
+                        output.accept(Items.OYAKI.get());
+                        output.accept(Items.PORK_RICE_BALL.get());
+                        output.accept(Items.STEAMED_EGG_IN_BAMBOO.get());
+                        output.accept(Items.KABAYAKI.get());
+                        //分区标记5，stick
+                        output.accept(Items.CANDY_APPLE.get());
+                        output.accept(Items.MILK_POPSICLE.get());
+                        output.accept(Items.BIG_POPSICLE.get());
+                        output.accept(Items.KINAKO_DANGO.get());
+                        output.accept(Items.MITARASHI_DANGO.get());
+                        output.accept(Items.ASSORTED_DANGO.get());
+                        output.accept(Items.LAMPREY_SKEWER.get());
+                        //分区标记6
+                        output.accept(Items.SHAVED_ICE_OVER_RICE.get());
+                        output.accept(Items.AVGOLEMONO.get());
+                        output.accept(Items.BLAZING_RED_CURRY.get());
+                        output.accept(Items.GRILLED_EEL_OVER_RICE.get());
+                        output.accept(Items.LONGEVITY_NOODLES.get());
+                        output.accept(Items.SHIRAYUKI.get());
+                        output.accept(Items.HAN_PALACE.get());
+                        output.accept(Items.TOFU_CRAB_STEW.get());
+                        output.accept(Items.SWEET_ORMOSIA_MOCHI_MIXED_BOILED.get());
+                        output.accept(Items.TUSCAN_SALMON.get());
+                        output.accept(Items.HONEY_GLAZED_CUCUMBER.get());
+                        output.accept(Items.LIONS_HEAD.get());
+                        output.accept(Items.MAPO_TOFU.get());
+                        output.accept(Items.UDUMBARA_CAKE.get());
+                        output.accept(Items.BOWL_OF_HEART_THROBBING_SURPRISE.get());
+                    })
+                    .build()
+    );
+}

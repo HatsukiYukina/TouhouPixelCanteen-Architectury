@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gensokyoizakaya:item/food/bowl/grilled_eel_over_rice"
+  }
+}

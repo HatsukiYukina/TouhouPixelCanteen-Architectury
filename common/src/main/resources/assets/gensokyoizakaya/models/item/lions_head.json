@@ -1,0 +1,5 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gensokyoizakaya:item/food/bowl/lions_head"
+  }}
