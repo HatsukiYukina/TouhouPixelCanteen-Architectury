@@ -24,7 +24,7 @@ public class ModTabs {
     public static final RegistrySupplier<CreativeModeTab> CREATIVE_TAB_MAIN = TABS.register(
             "main_tab",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
-                    .title(Component.translatable("tab.gensokyoizakay.main"))
+                    .title(Component.translatable("tab.gensokyoizakaya.main"))
                     .icon(() -> new ItemStack(ModItems.CHILI_PEPPER.get()))
                     .displayItems((parameters, output) -> {
                         //在这填充物品
@@ -111,6 +111,17 @@ public class ModTabs {
                         output.accept(Items.MAPO_TOFU.get());
                         output.accept(Items.UDUMBARA_CAKE.get());
                         output.accept(Items.BOWL_OF_HEART_THROBBING_SURPRISE.get());
+                        //分区标记7，怪肉
+                        output.accept(Items.FLESH.get());
+                        output.accept(Items.COOKED_FLESH.get());
+                        output.accept(Items.FLESH_SLICE.get());
+                        output.accept(Items.COOKED_FLESH_SLICE.get());
+                        output.accept(Items.FLESH_DUMPLINGS.get());
+                        output.accept(Items.CANNED_FLESH.get());
+                        output.accept(Items.FLESH_STEW.get());
+                        output.accept(Items.BOWL_OF_FLESH_FEAST.get());
+                        output.accept(Items.FLESH_CHOCOLATE_MOUSSE.get());
+                        output.accept(Items.SCARLET_DEVIL_CAKE.get());
                     })
                     .build()
     );

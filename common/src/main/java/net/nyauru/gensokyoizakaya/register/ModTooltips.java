@@ -286,7 +286,47 @@ public class ModTooltips {
         if (stack.getItem() == net.nyauru.l2.register.Items.BOWL_OF_HEART_THROBBING_SURPRISE.get()) {
             components.add(Component.translatable("tooltip.gensokyoizakaya.bowl_of_heart_throbbing_surprise")
                     .withStyle(ChatFormatting.WHITE));
+        }//分区标记7
+        if (stack.getItem() == net.nyauru.l2.register.Items.FLESH.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.flesh")
+                    .withStyle(ChatFormatting.WHITE));
         }
+        if (stack.getItem() == net.nyauru.l2.register.Items.COOKED_FLESH.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.cooked_flesh")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.FLESH_SLICE.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.flesh_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.COOKED_FLESH_SLICE.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.cooked_flesh_slice")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.FLESH_DUMPLINGS.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.flesh_dumplings")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.CANNED_FLESH.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.canned_flesh")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.FLESH_STEW.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.flesh_stew")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.BOWL_OF_FLESH_FEAST.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.bowl_of_flesh_feast")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.FLESH_CHOCOLATE_MOUSSE.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.flesh_chocolate_mousse")
+                    .withStyle(ChatFormatting.WHITE));
+        }
+        if (stack.getItem() == net.nyauru.l2.register.Items.SCARLET_DEVIL_CAKE.get()) {
+            components.add(Component.translatable("tooltip.gensokyoizakaya.scarlet_devil_cake")
+                    .withStyle(ChatFormatting.WHITE));
+        }//分区标记8
 
         //原版物品
         if (stack.getItem() == Items.CARROT) {
