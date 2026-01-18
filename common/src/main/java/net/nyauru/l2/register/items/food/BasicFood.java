@@ -1,0 +1,320 @@
+package net.nyauru.l2.register.items.food;
+
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.nyauru.gensokyoizakaya.GensokyoIzakaya;
+
+import java.util.function.Supplier;
+
+public class BasicFood {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(GensokyoIzakaya.MOD_ID, Registries.ITEM);
+    //注册普通物品
+    //在1.20.1中，我们通过forge注册机来实现物品初始化，如需代码移植，在这里我们需要将 RegistryObject 改为 RegistrySupplier。作用类似，代码改动不大，需注意部分属性版本重命名
+    private static RegistrySupplier<Item> registerItem(String id, Supplier<Item> itemSupplier) {
+        return ITEMS.register(id, itemSupplier);
+    }
+    //注册方块物品
+    private static RegistrySupplier<Item> registerBlockItem(String id, Supplier<Block> blockSupplier) {
+        return ITEMS.register(id, () -> new BlockItem(blockSupplier.get(), new Item.Properties()));
+    }
+    /*
+    //通过这样来创建你的普通物品，原理几乎和我们的1.20.1版本相同，纯大写的名称我们需要经常调用
+    public static final RegistrySupplier<Item> EXAMPLE_ITEM = registerItem("example_item",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    //这里是食物类物品
+    public static final RegistrySupplier<Item> EXAMPLE_FOOD = registerItem("example_food",
+        () -> new Item(new Item.Properties().food(//食物属性，抄1.20.1版本即可)));
+    //方块物品，但随后需要去ModBlocks内实现它，参考1.20.1版
+    public static final RegistrySupplier<Item> EXAMPLE_BLOCK_ITEM = registerBlockItem("example_block", ModBlocks.EXAMPLE_BLOCK);
+    */
+    //另请注意：
+    //在归家中，使用了自定义构建器，而我们使用的是原版构建器，需要进行转换
+    //下面是归家的示例
+    /* RAW_LAMPREY(FoodType.SIMPLE, 2, 0.3f,
+			new EffectEntry(() -> MobEffects.NIGHT_VISION, 2400, 0, 0.5f),
+			ItemTags.FISHES, YHTagGen.RAW_EEL, DietTagGen.PROTEINS.tag
+	),
+     */
+    //生八目鳗
+    public static final RegistrySupplier<Item> RAW_LAMPREY =
+            ITEMS.register("raw_lamprey", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0), 0.5f)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> ROASTED_LAMPREY =
+            ITEMS.register("roasted_lamprey",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0), 1)
+                            .build()
+                    )
+                    .stacksTo(64)//设置堆叠数量
+            ));
+
+    public static final RegistrySupplier<Item> RAW_LAMPREY_FILLET =
+            ITEMS.register("raw_lamprey_fillet", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1800, 0), 0.5f)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> RAW_TUNA =
+            ITEMS.register("raw_tuna",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(9)
+                            .saturationModifier(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.3f)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> ROASTED_LAMPREY_FILLET =
+            ITEMS.register("roasted_lamprey_fillet", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1800, 0), 1)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> SEARED_TUNA =
+            ITEMS.register("seared_tuna",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationModifier(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.4f)
+                            .build()
+                    )
+            ));
+    //分区标记2
+    //生金枪鱼片
+    public static final RegistrySupplier<Item> RAW_TUNA_SLICE =
+            ITEMS.register("raw_tuna_slice", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.3f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 0), 0.3f)
+                            .build()
+                    )
+            ));
+    //炙烤金枪鱼片
+    public static final RegistrySupplier<Item> SEARED_TUNA_SLICE =
+            ITEMS.register("seared_tuna_slice", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(5)
+                            .saturationModifier(0.8f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 0), 0.4f)
+                            .build()
+                    )
+            ));
+    //金枪鱼大腹
+    public static final RegistrySupplier<Item> OTORO =
+            ITEMS.register("otoro", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(9)
+                            .saturationModifier(0.3f)
+                            .effect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 800, 0), 0.5f)
+                            .build()
+                    )
+            ));
+    //螃蟹
+    public static final RegistrySupplier<Item> CRAB =
+            ITEMS.register("crab", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.2f)
+                            .build()
+                    )
+            ));
+    //蒸螃蟹
+    public static final RegistrySupplier<Item> STEAMED_CRAB =
+            ITEMS.register("steamed_crab", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.3f)
+                            .build()
+                    )
+            ));
+    //蟹粉
+    public static final RegistrySupplier<Item> CRAB_MEAT =
+            ITEMS.register("crab_meat", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 0), 0.5f)
+                            .build()
+                    )
+            ));
+    //蟹籽
+    public static final RegistrySupplier<Item> CRAB_ROE =
+            ITEMS.register("crab_roe", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8f)
+                            //.effect(new MobEffectInstance(YHEffects.CRABY, 600, 1), 0.5f)
+                            .build()
+                    )
+            ));
+    //生鹿排
+    public static final RegistrySupplier<Item> RAW_VENISON =
+            ITEMS.register("raw_venison", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.3f)
+                            .build()
+                    )
+            ));
+    //烤鹿排
+    public static final RegistrySupplier<Item> GRILLED_VENISON =
+            ITEMS.register("grilled_venison", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(0.8f)
+                            .build()
+                    )
+            ));
+    //生鹿片
+    public static final RegistrySupplier<Item> RAW_VENISON_SLICE =
+            ITEMS.register("raw_venison_slice", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
+                            .fast()
+                            .build()
+                    )
+            ));
+    //分区标记3
+    //烤鹿片
+    public static final RegistrySupplier<Item> GRILLED_VENISON_SLICE =
+            ITEMS.register("grilled_venison_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8F)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> COOKED_MANDRAKE_ROOT =
+            ITEMS.register("cooked_mandrake_root",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> ROE =
+            ITEMS.register("roe",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.6F)
+                            .effect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 400, 0), 0.3f)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> BUTTER =
+            ITEMS.register("butter",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.3F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TOFU =
+            ITEMS.register("tofu",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.5F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> OILY_BEAN_CURD =
+            ITEMS.register("oily_bean_curd",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.8F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> IMITATION_CRAB =
+            ITEMS.register("imitation_crab",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(1F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TAMAGOYAKI =
+            ITEMS.register("tamagoyaki",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> TAMAGOYAKI_SLICE =
+            ITEMS.register("tamagoyaki_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> NATTOU =
+            ITEMS.register("nattou",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> CUCUMBER_SLICE =
+            ITEMS.register("cucumber_slice",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.3F)
+                            .fast()
+                            .build()
+                    )
+            ));
+
+    public static final RegistrySupplier<Item> RAISIN =
+            ITEMS.register("raisin",() -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.6F)
+                            .fast()
+                            .build()
+                    )
+            ));
+}

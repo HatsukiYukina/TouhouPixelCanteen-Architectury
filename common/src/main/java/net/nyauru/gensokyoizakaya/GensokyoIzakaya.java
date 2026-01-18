@@ -1,16 +1,10 @@
-/*
-MIT License
-Copyright (c) 2025 aurora4123,Yukina,
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
 package net.nyauru.gensokyoizakaya;
 
 import net.nyauru.gensokyoizakaya.register.ModBlocks;
 import net.nyauru.gensokyoizakaya.register.ModItems;
 import net.nyauru.gensokyoizakaya.register.ModTabs;
 import net.nyauru.gensokyoizakaya.register.ModTooltips;
+import net.nyauru.l2.register.items.food.*;
 
 public final class GensokyoIzakaya {
     public static final String MOD_ID = "gensokyoizakaya";
@@ -20,8 +14,16 @@ public final class GensokyoIzakaya {
         //初始化物品与相应方块
         ModBlocks.BLOCKS.register();
         net.nyauru.l2.register.Blocks.BLOCKS.register();
+        //本体物品导入
         ModItems.ITEMS.register();
-        net.nyauru.l2.register.Items.ITEMS.register();
+        //开始导入食物
+        BasicFood.ITEMS.register();
+        BottleFood.ITEMS.register();
+        BowlFood.ITEMS.register();
+        MochiFood.ITEMS.register();
+        SimpleFood.ITEMS.register();
+        StickFood.ITEMS.register();
+        FleshFood.ITEMS.register();
         //导入创造物品栏
         ModTabs.TABS.register();
         //初始化tooltip

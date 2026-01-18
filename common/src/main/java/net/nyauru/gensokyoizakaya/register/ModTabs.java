@@ -13,7 +13,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.nyauru.l2.register.Items;
+import net.nyauru.l2.register.items.food.*;
 import net.nyauru.gensokyoizakaya.GensokyoIzakaya;
 
 public class ModTabs {
@@ -38,90 +38,92 @@ public class ModTabs {
             "yh_tab",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                     .title(Component.translatable("tab.gensokyoizakaya.youkaishomecoming"))
-                    .icon(() -> new ItemStack(Items.RAW_LAMPREY.get()))
+                    .icon(() -> new ItemStack(BasicFood.RAW_LAMPREY.get()))
                     .displayItems((parameters, output) -> {
                         //在这填充物品
-                        output.accept(Items.RAW_LAMPREY.get());
-                        output.accept(Items.ROASTED_LAMPREY.get());
-                        output.accept(Items.RAW_LAMPREY_FILLET.get());
-                        output.accept(Items.RAW_TUNA.get());
-                        output.accept(Items.ROASTED_LAMPREY_FILLET.get());
-                        output.accept(Items.SEARED_TUNA.get());
+                        output.accept(BasicFood.RAW_LAMPREY.get());
+                        output.accept(BasicFood.ROASTED_LAMPREY.get());
+                        output.accept(BasicFood.RAW_LAMPREY_FILLET.get());
+                        output.accept(BasicFood.RAW_TUNA.get());
+                        output.accept(BasicFood.ROASTED_LAMPREY_FILLET.get());
+                        output.accept(BasicFood.SEARED_TUNA.get());
                         //分区标记2
-                        output.accept(Items.RAW_TUNA_SLICE.get());
-                        output.accept(Items.SEARED_TUNA_SLICE.get());
-                        output.accept(Items.OTORO.get());
-                        output.accept(Items.CRAB.get());
-                        output.accept(Items.STEAMED_CRAB.get());
-                        output.accept(Items.CRAB_MEAT.get());
-                        output.accept(Items.CRAB_ROE.get());
-                        output.accept(Items.RAW_VENISON.get());
-                        output.accept(Items.GRILLED_VENISON.get());
-                        output.accept(Items.RAW_VENISON_SLICE.get());
+                        output.accept(BasicFood.RAW_TUNA_SLICE.get());
+                        output.accept(BasicFood.SEARED_TUNA_SLICE.get());
+                        output.accept(BasicFood.OTORO.get());
+                        output.accept(BasicFood.CRAB.get());
+                        output.accept(BasicFood.STEAMED_CRAB.get());
+                        output.accept(BasicFood.CRAB_MEAT.get());
+                        output.accept(BasicFood.CRAB_ROE.get());
+                        output.accept(BasicFood.RAW_VENISON.get());
+                        output.accept(BasicFood.GRILLED_VENISON.get());
+                        output.accept(BasicFood.RAW_VENISON_SLICE.get());
                         //分区标记3
-                        output.accept(Items.GRILLED_VENISON_SLICE.get());
-                        output.accept(Items.COOKED_MANDRAKE_ROOT.get());
-                        output.accept(Items.ROE.get());
-                        output.accept(Items.BUTTER.get());
-                        output.accept(Items.TOFU.get());
-                        output.accept(Items.OILY_BEAN_CURD.get());
-                        output.accept(Items.IMITATION_CRAB.get());
-                        output.accept(Items.TAMAGOYAKI.get());
-                        output.accept(Items.TAMAGOYAKI_SLICE.get());
-                        output.accept(Items.NATTOU.get());
-                        output.accept(Items.CUCUMBER_SLICE.get());
-                        output.accept(Items.RAISIN.get());
+                        output.accept(BasicFood.GRILLED_VENISON_SLICE.get());
+                        output.accept(BasicFood.COOKED_MANDRAKE_ROOT.get());
+                        output.accept(BasicFood.ROE.get());
+                        output.accept(BasicFood.BUTTER.get());
+                        output.accept(BasicFood.TOFU.get());
+                        output.accept(BasicFood.OILY_BEAN_CURD.get());
+                        output.accept(BasicFood.IMITATION_CRAB.get());
+                        output.accept(BasicFood.TAMAGOYAKI.get());
+                        output.accept(BasicFood.TAMAGOYAKI_SLICE.get());
+                        output.accept(BasicFood.NATTOU.get());
+                        output.accept(BasicFood.CUCUMBER_SLICE.get());
+                        output.accept(BasicFood.RAISIN.get());
                         //分区标记4
-                        output.accept(Items.MOCHI.get());
-                        output.accept(Items.TSUKIMI_DANGO.get());
-                        output.accept(Items.MATCHA_MOCHI.get());
-                        output.accept(Items.SAKURA_MOCHI.get());
-                        output.accept(Items.YASHOUMA_DANGO.get());
-                        output.accept(Items.ONIGILI.get());
-                        output.accept(Items.SENBEI.get());
-                        output.accept(Items.SEKIBANKIYAKI.get());
-                        output.accept(Items.YAKUMO_INARI.get());
-                        output.accept(Items.MANTOU.get());
-                        output.accept(Items.BUN.get());
-                        output.accept(Items.OYAKI.get());
-                        output.accept(Items.PORK_RICE_BALL.get());
-                        output.accept(Items.STEAMED_EGG_IN_BAMBOO.get());
-                        output.accept(Items.KABAYAKI.get());
+                        output.accept(MochiFood.MOCHI.get());
+                        output.accept(MochiFood.TSUKIMI_DANGO.get());
+                        output.accept(MochiFood.MATCHA_MOCHI.get());
+                        output.accept(MochiFood.SAKURA_MOCHI.get());
+                        output.accept(MochiFood.COFFEE_MOCHI.get()); //待咖啡实现
+                        output.accept(MochiFood.YASHOUMA_DANGO.get());
+                        output.accept(SimpleFood.ONIGILI.get());
+                        output.accept(SimpleFood.SENBEI.get());
+                        output.accept(SimpleFood.SEKIBANKIYAKI.get());
+                        output.accept(SimpleFood.YAKUMO_INARI.get());
+                        output.accept(SimpleFood.MANTOU.get());
+                        output.accept(SimpleFood.BUN.get());
+                        output.accept(SimpleFood.OYAKI.get());
+                        output.accept(SimpleFood.PORK_RICE_BALL.get());
+                        output.accept(SimpleFood.STEAMED_EGG_IN_BAMBOO.get());
+                        output.accept(SimpleFood.KABAYAKI.get());
                         //分区标记5，stick
-                        output.accept(Items.CANDY_APPLE.get());
-                        output.accept(Items.MILK_POPSICLE.get());
-                        output.accept(Items.BIG_POPSICLE.get());
-                        output.accept(Items.KINAKO_DANGO.get());
-                        output.accept(Items.MITARASHI_DANGO.get());
-                        output.accept(Items.ASSORTED_DANGO.get());
-                        output.accept(Items.LAMPREY_SKEWER.get());
+                        output.accept(StickFood.CANDY_APPLE.get());
+                        output.accept(StickFood.MILK_POPSICLE.get());
+                        output.accept(StickFood.BIG_POPSICLE.get());
+                        output.accept(StickFood.KINAKO_DANGO.get());
+                        output.accept(StickFood.MITARASHI_DANGO.get());
+                        output.accept(StickFood.ASSORTED_DANGO.get());
+                        output.accept(StickFood.LAMPREY_SKEWER.get());
                         //分区标记6
-                        output.accept(Items.SHAVED_ICE_OVER_RICE.get());
-                        output.accept(Items.AVGOLEMONO.get());
-                        output.accept(Items.BLAZING_RED_CURRY.get());
-                        output.accept(Items.GRILLED_EEL_OVER_RICE.get());
-                        output.accept(Items.LONGEVITY_NOODLES.get());
-                        output.accept(Items.SHIRAYUKI.get());
-                        output.accept(Items.HAN_PALACE.get());
-                        output.accept(Items.TOFU_CRAB_STEW.get());
-                        output.accept(Items.SWEET_ORMOSIA_MOCHI_MIXED_BOILED.get());
-                        output.accept(Items.TUSCAN_SALMON.get());
-                        output.accept(Items.HONEY_GLAZED_CUCUMBER.get());
-                        output.accept(Items.LIONS_HEAD.get());
-                        output.accept(Items.MAPO_TOFU.get());
-                        output.accept(Items.UDUMBARA_CAKE.get());
-                        output.accept(Items.BOWL_OF_HEART_THROBBING_SURPRISE.get());
+                        output.accept(BottleFood.SHAVED_ICE_OVER_RICE.get());
+                        output.accept(BottleFood.KOMEIJI_ICE_CREAM.get()); //待实现
+                        output.accept(BowlFood.AVGOLEMONO.get());
+                        output.accept(BowlFood.BLAZING_RED_CURRY.get());
+                        output.accept(BowlFood.GRILLED_EEL_OVER_RICE.get());
+                        output.accept(BowlFood.LONGEVITY_NOODLES.get());
+                        output.accept(BowlFood.SHIRAYUKI.get());
+                        output.accept(BowlFood.HAN_PALACE.get());
+                        output.accept(BowlFood.TOFU_CRAB_STEW.get());
+                        output.accept(BowlFood.SWEET_ORMOSIA_MOCHI_MIXED_BOILED.get());
+                        output.accept(BowlFood.TUSCAN_SALMON.get());
+                        output.accept(BowlFood.HONEY_GLAZED_CUCUMBER.get());
+                        output.accept(BowlFood.LIONS_HEAD.get());
+                        output.accept(BowlFood.MAPO_TOFU.get());
+                        output.accept(BowlFood.UDUMBARA_CAKE.get());
+                        output.accept(BowlFood.BOWL_OF_HEART_THROBBING_SURPRISE.get());
                         //分区标记7，怪肉
-                        output.accept(Items.FLESH.get());
-                        output.accept(Items.COOKED_FLESH.get());
-                        output.accept(Items.FLESH_SLICE.get());
-                        output.accept(Items.COOKED_FLESH_SLICE.get());
-                        output.accept(Items.FLESH_DUMPLINGS.get());
-                        output.accept(Items.CANNED_FLESH.get());
-                        output.accept(Items.FLESH_STEW.get());
-                        output.accept(Items.BOWL_OF_FLESH_FEAST.get());
-                        output.accept(Items.FLESH_CHOCOLATE_MOUSSE.get());
-                        output.accept(Items.SCARLET_DEVIL_CAKE.get());
+                        output.accept(FleshFood.FLESH.get());
+                        output.accept(FleshFood.COOKED_FLESH.get());
+                        output.accept(FleshFood.FLESH_SLICE.get());
+                        output.accept(FleshFood.COOKED_FLESH_SLICE.get());
+                        output.accept(FleshFood.FLESH_DUMPLINGS.get());
+                        output.accept(FleshFood.CANNED_FLESH.get());
+                        output.accept(FleshFood.FLESH_STEW.get());
+                        output.accept(FleshFood.BOWL_OF_FLESH_FEAST.get());
+                        output.accept(FleshFood.FLESH_CHOCOLATE_MOUSSE.get());
+                        output.accept(FleshFood.SCARLET_DEVIL_CAKE.get());
                     })
                     .build()
     );
