@@ -1,16 +1,27 @@
 package net.nyauru.gensokyoizakaya.fabric;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.nyauru.gensokyoizakaya.GensokyoIzakaya;
 import net.fabricmc.api.ModInitializer;
+import net.nyauru.gensokyoizakaya.config.ModConfig;
+import net.nyauru.gensokyoizakaya.fabric.init.DependencyChecker;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public final class GensokyoIzakayaFabric implements ModInitializer {
+    private static final Logger LOGGER = LoggerFactory.getLogger("GensokyoIzakaya:Init");
     @Override
     public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
+        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new); //注册配置
+        ModConfig.INSTANCE = AutoConfig.getConfigHolder(ModConfig.class).getConfig(); //获取配置
 
-        // Run our common setup.
-        GensokyoIzakaya.init();
+        if(ModConfig.INSTANCE.skipPolymerCheck){LOGGER.warn("[GensokyoIzakaya] YOU ARE SKIPPING POLYMER CHECK!!!");};
+        if (!ModConfig.INSTANCE.skipPolymerCheck) try{ //若未跳过Polymer检查
+            DependencyChecker.checkPolymerDependency();//检查Polymer依赖
+        }catch (Exception e) {throw e;}; //抛出异常
+
+        GensokyoIzakaya.init(); //初始化
+
     }
 }

@@ -42,13 +42,13 @@ public class ModItems {
     public static final RegistrySupplier<Item> EXAMPLE_BLOCK_ITEM = registerBlockItem("example_block", ModBlocks.EXAMPLE_BLOCK);
     */
     public static final RegistrySupplier<Item> CHILI_PEPPER =
-        ITEMS.register("chili_pepper", () -> new Item(new Item.Properties()
-                .food(new FoodProperties.Builder()
-                    .nutrition(1)
-                    .saturationModifier(0.1F) //注意：1.20.1版本后，营养价值从saturationMod被改为saturationModifier
-                    .fast()
-                    .build()
-        ).stacksTo(64)));  //辣椒
+            ITEMS.register("chili_pepper", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationModifier(0.1F) //注意：1.20.1版本后，营养价值从saturationMod被改为saturationModifier
+                            .fast()
+                            .build()
+                    ).stacksTo(64)));  //辣椒
     public static final RegistrySupplier<Item> CHILI_PEPPER_SEED =
             ITEMS.register("chili_pepper_seed",
                     () -> new ItemNameBlockItem(ModBlocks.CHILI_PEPPER_BLOCK.get(), basicItem()));
