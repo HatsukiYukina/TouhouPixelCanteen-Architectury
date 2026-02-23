@@ -1,5 +1,8 @@
 package net.nyauru.gensokyoizakaya;
 
+import dev.architectury.platform.Platform;
+import dev.architectury.utils.Env;
+import net.nyauru.gensokyoizakaya.config.ModConfig;
 import net.nyauru.gensokyoizakaya.register.ModBlocks;
 import net.nyauru.gensokyoizakaya.register.ModItems;
 import net.nyauru.gensokyoizakaya.register.ModTabs;
@@ -27,6 +30,13 @@ public final class GensokyoIzakaya {
         //导入创造物品栏
         ModTabs.TABS.register();
         //初始化tooltip
-        ModTooltips.init();
+        if (isClient()) {
+            ModTooltips.init();//初始化tooltip
+        }
+
+    }
+    private static boolean isClient() {
+        return Platform.getEnvironment() == Env.CLIENT;
     }
 }
+

@@ -169,6 +169,10 @@
   "tooltip.minecraft.salmon": "一种高度洄游海鱼，但在幻想乡的河流湖泊可见。有点儿珍贵。",
   "tooltip.minecraft.mushroom": "从魔法森林采回来的品相良好的蘑菇，在另外一个世界它无法人工种植，非常珍贵。",
   "text.autoconfig.GensokyoIzakaya.title": "幻雀妖 配置",
-  "text.autoconfig.GensokyoIzakaya.option.enablePolymer": "启用Polymer模式",
-  "text.autoconfig.GensokyoIzakaya.option.enablePolymer.@Tooltip": "此选项仅限Fabric平台开启，且需安装Polymer作为前置。\n有毁档风险，请备份存档后开启，需重启生效。"
+  "text.autoconfig.GensokyoIzakaya.option.enablePolymer": "(未完成)启用Polymer模式",
+  "text.autoconfig.GensokyoIzakaya.option.enablePolymer.@Tooltip": "此选项仅限Fabric平台开启，且需安装Polymer作为前置。\n有毁档风险，请备份存档后开启，需重启生效。",
+  "text.autoconfig.GensokyoIzakaya.option.skipPolymerCheck": "(调试)跳过Polymer检查",
+  "text.autoconfig.GensokyoIzakaya.option.skipPolymerCheck.@Tooltip": "因特殊原因需跳检查可开启，不建议开启。若Polymer模式未启用则不会检查，不需要勾选此项。\n需重启生效",
+  "text.autoconfig.GensokyoIzakaya.option.enableYHCheck": "开启“妖怪们的归家”规避检查",
+  "text.autoconfig.GensokyoIzakaya.option.enableYHCheck.@Tooltip": "本模组虽然与归家没有代码冲突，但存在内存重复。若需要共存安装请关闭此检查。\n需重启生效"
 }

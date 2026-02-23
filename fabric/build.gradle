@@ -42,7 +42,7 @@ dependencies {
 
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
-    modImplementation "curse.maven:farmers-delight-refabricated-993166:7199751"
+    modImplementation "curse.maven:farmers-delight-refabricated-993166:7638379"
 
     modImplementation "eu.pb4:polymer-core:0.9.19+1.21.1" //polymer
 

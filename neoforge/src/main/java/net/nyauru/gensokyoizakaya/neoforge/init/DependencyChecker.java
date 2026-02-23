@@ -1,6 +1,6 @@
-package net.nyauru.gensokyoizakaya.fabric.init;
+package net.nyauru.gensokyoizakaya.neoforge.init;
 
-import net.fabricmc.loader.api.FabricLoader;
+import net.neoforged.fml.ModList;
 import net.nyauru.gensokyoizakaya.config.ModConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +14,7 @@ public class DependencyChecker {
     private static final String YH_ID = "youkaishomecoming";
     private static final String YF_ID = "youkaisfeasts";
 
+    /*
     public static boolean checkPolymerDependency() {
         //获取配置值
         boolean enablePolymer = ModConfig.INSTANCE != null && ModConfig.INSTANCE.enablePolymer;
@@ -41,13 +42,13 @@ public class DependencyChecker {
 
         throw new RuntimeException("GensokyoIzakaya:Polymer dependency missing!");
     }
-
+*/
 
 
     public static boolean checkYH() {
         //检查YH是否安装
-        boolean YHLoaded = FabricLoader.getInstance().isModLoaded(YH_ID);
-        boolean YFLoaded = FabricLoader.getInstance().isModLoaded(YF_ID);
+        boolean YHLoaded = ModList.get().isLoaded(YH_ID);
+        boolean YFLoaded = ModList.get().isLoaded(YF_ID);
         if (YHLoaded) {
             throwYHIsLoaded();
             return true;
@@ -72,7 +73,7 @@ public class DependencyChecker {
 
         throw new RuntimeException("GensokyoIzakaya:YoukaisFeast been install!");
     }
-
+/*
     private static String buildPolymerErrorMessage() {
         return String.join("\n",
                 "",
@@ -104,7 +105,7 @@ public class DependencyChecker {
                 "╚═══════════════════════════════════════════════════════════════════════╝"
         );
     }
-
+*/
     private static String buildYHMessage() {
         return String.join("\n",
                 "",
