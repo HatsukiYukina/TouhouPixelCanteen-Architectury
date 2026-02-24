@@ -1,0 +1,28 @@
+{
+  "type": "gensokyoizakaya:moka_pot",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:coffee_powder"
+    },
+    {
+      "type": "l2core:potion",
+      "potion": "minecraft:water"
+    },
+    {
+      "item": "gensokyoizakaya:coffee_powder"
+    },
+    {
+      "item": "gensokyoizakaya:bowl_of_cream"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:con_panna"
+  }
+}

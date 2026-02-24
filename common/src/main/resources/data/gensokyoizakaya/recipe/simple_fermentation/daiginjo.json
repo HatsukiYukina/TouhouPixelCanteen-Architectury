@@ -1,0 +1,29 @@
+{
+  "type": "gensokyoizakaya:simple_fermentation",
+  "ingredients": [
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "inputFluid": {
+    "tag": "minecraft:water"
+  },
+  "outputFluid": {
+    "amount": 1000,
+    "id": "gensokyoizakaya:daiginjo"
+  },
+  "results": [],
+  "time": 2400
+}

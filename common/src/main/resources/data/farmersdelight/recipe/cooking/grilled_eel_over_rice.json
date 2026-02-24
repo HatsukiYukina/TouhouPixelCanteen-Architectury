@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "tag": "gensokyoizakaya:raw_eel"
+    },
+    {
+      "tag": "gensokyoizakaya:raw_eel"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "item": "gensokyoizakaya:soy_sauce_bottle"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:grilled_eel_over_rice"
+  }
+}

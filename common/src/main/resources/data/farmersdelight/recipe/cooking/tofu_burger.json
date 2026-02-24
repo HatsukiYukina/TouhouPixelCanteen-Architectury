@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "gensokyoizakaya:saucer"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:tofu"
+    },
+    {
+      "item": "gensokyoizakaya:butter"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:tofu_burger"
+  }
+}

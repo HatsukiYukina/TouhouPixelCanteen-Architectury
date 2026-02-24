@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "gensokyoizakaya:stripped_mandrake_root"
+  },
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:cooked_mandrake_root"
+  }
+}

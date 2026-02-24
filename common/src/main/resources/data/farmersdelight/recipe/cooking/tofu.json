@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:tofu"
+  }
+}

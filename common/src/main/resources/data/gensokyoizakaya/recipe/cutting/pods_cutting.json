@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:pods"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "gensokyoizakaya:soybean"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

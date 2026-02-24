@@ -1,0 +1,26 @@
+{
+  "type": "gensokyoizakaya:simple_fermentation",
+  "ingredients": [
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    }
+  ],
+  "inputFluid": {
+    "tag": "minecraft:water"
+  },
+  "outputFluid": {
+    "amount": 1000,
+    "id": "gensokyoizakaya:mio"
+  },
+  "results": [],
+  "time": 2400
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "item": "gensokyoizakaya:ice_cube"
+    },
+    {
+      "item": "gensokyoizakaya:redbean"
+    },
+    {
+      "item": "farmersdelight:cod_roll"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:shaved_ice_over_rice"
+  }
+}

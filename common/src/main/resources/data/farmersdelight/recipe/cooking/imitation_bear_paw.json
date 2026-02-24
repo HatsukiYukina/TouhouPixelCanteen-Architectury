@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "gensokyoizakaya:saucer"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "minecraft:pufferfish"
+    },
+    {
+      "item": "minecraft:bamboo"
+    },
+    {
+      "tag": "c:foods/raw_pork"
+    },
+    {
+      "tag": "c:foods/onion"
+    },
+    {
+      "tag": "gensokyoizakaya:raw_eel"
+    },
+    {
+      "item": "gensokyoizakaya:soy_sauce_bottle"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:imitation_bear_paw"
+  }
+}

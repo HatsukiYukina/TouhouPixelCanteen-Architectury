@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:espresso"
+    },
+    {
+      "item": "gensokyoizakaya:ice_cube"
+    },
+    {
+      "item": "gensokyoizakaya:bowl_of_cream"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:affogato"
+  }
+}

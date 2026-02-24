@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "gensokyoizakaya:dango"
+    },
+    {
+      "tag": "gensokyoizakaya:dango"
+    },
+    {
+      "tag": "gensokyoizakaya:dango"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:kinako_dango"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "gensokyoizakaya:simple_fermentation",
+  "ingredients": [
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:nautilus_shell"
+    }
+  ],
+  "inputFluid": {
+    "tag": "minecraft:water"
+  },
+  "outputFluid": {
+    "amount": 1000,
+    "id": "gensokyoizakaya:dassai"
+  },
+  "results": [],
+  "time": 2400
+}

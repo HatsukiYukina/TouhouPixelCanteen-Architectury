@@ -1,0 +1,13 @@
+{
+  "type": "gensokyoizakaya:drying_rack",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "gensokyoizakaya:green_tea_leaves"
+  },
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:white_tea_leaves"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "gensokyoizakaya:raw_lamprey_fillet"
+  },
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:roasted_lamprey_fillet"
+  }
+}

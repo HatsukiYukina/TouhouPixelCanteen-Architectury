@@ -1,0 +1,26 @@
+{
+  "type": "gensokyoizakaya:simple_fermentation",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    }
+  ],
+  "inputFluid": {
+    "tag": "minecraft:water"
+  },
+  "outputFluid": {
+    "amount": 1000,
+    "id": "gensokyoizakaya:soy_sauce"
+  },
+  "results": [],
+  "time": 1800
+}

@@ -1,0 +1,21 @@
+{
+  "type": "gensokyoizakaya:moka_pot",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:espresso"
+    },
+    {
+      "item": "gensokyoizakaya:coffee_powder"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:ristretto"
+  }
+}

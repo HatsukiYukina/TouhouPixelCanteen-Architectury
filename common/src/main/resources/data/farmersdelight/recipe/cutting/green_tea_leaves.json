@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:green_tea_leaves"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "gensokyoizakaya:matcha"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "minecraft:shovels"
+  }
+}

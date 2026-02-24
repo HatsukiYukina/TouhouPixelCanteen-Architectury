@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "gensokyoizakaya:saucer"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:redbean"
+    },
+    {
+      "item": "gensokyoizakaya:soybean"
+    },
+    {
+      "item": "minecraft:cherry_leaves"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "tag": "c:matcha"
+    },
+    {
+      "item": "gensokyoizakaya:udumbara_flower"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:seven_colored_yokan"
+  }
+}

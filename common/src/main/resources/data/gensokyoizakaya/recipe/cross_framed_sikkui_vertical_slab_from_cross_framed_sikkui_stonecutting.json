@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gensokyoizakaya:cross_framed_sikkui"
+  },
+  "result": {
+    "count": 2,
+    "id": "gensokyoizakaya:cross_framed_sikkui_vertical_slab"
+  }
+}

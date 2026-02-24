@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:coffee_beans"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "gensokyoizakaya:coffee_powder"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "minecraft:shovels"
+  }
+}

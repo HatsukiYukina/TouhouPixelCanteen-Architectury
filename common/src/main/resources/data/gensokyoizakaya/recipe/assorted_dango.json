@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gensokyoizakaya:mochi"
+    },
+    {
+      "item": "gensokyoizakaya:matcha_mochi"
+    },
+    {
+      "item": "gensokyoizakaya:sakura_mochi"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gensokyoizakaya:assorted_dango"
+  }
+}
